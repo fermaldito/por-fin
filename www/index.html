@@ -1,41 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+<!DOCTYPE html>
+<html>
+    <head>
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/camera.css"/>
-		
-		<script type="text/javascript" src="cordova.js"></script>
-		<script type="text/javascript" src="js/fastclick.js"></script>
-		<script type="text/javascript" src="js/camera.js"></script>
-		<script type="text/javascript" src="js/effects.js"></script>
-				
-		<title>Cámara</title>
+        <link rel="stylesheet" type="text/css" href="css/gestures.css" />
+        <title>Gestures III</title>
     </head>
     <body>
-        <div class="header">		
-			<img src="img/camera.png" align="left"/>
-			<span>Cámara con filtros (canvas)</span>			
-		</div>
-		<canvas id="foto"></canvas>
-		
-		<div class="button-container">
-			<button id="button-action" class="button">Tomar foto</button>
-			<button id="button-gallery" class="button">Galeria</button>
-			<button id="button-savePhoto" class="button"> Guardar foto </button>
-		</div>
+      
 
-    <div class="button-container">
-      <button class="button button-filter">B &amp; N </button>
-      <button class="button button-filter">Negativo </button>
-      <button class="button button-filter">Sepia </button> 
-          
-    </div>
+      <button id='claro'>CLARO</button>
+      <button id='oscuro'>OSCURO</button>
+      <div id='zona-gestos'></div>
+      <h1 id='info'> gesto !</h1>
 
-		<div class="footer">
-			Creando apps...!!
-		</div>
-		
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="js/fastclick.js"></script>
+      <script type="text/javascript" src="js/hammer.min.js"></script>
+      <script type="text/javascript" src="js/gestures.js"></script>
     </body>
-
 </html>
